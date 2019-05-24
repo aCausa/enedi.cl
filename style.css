@@ -1,0 +1,297 @@
+@font-face {
+  font-family: 'KappaDisplay';
+  font-style: normal;
+  font-weight: 900;
+  src: local('KappaDisplay Black'), local('KappaDisplay-Black'), url(fonts/KappaDisplay-Black.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'KappaText';
+  font-style: normal;
+  font-weight: 400;
+  src: local('KappaText Book'), local('KappaText-Book'), url(fonts/KappaText-Book.woff2) format('woff2');
+}
+
+
+
+body {
+    font-family: 'KappaText', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.01rem;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    background: linear-gradient(135deg,#ccc,#fff);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#year {
+    font-family: 'KappaDisplay', sans-serif;
+    font-weight: 900;
+}
+
+
+h1 {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    letter-spacing: 0.1rem;
+    color: rgb(255,72,176);
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: rgb(0,123,255);
+    padding: 1rem 0;
+    max-width:75%;
+}
+
+@media screen and (orientation:portrait){
+ h2{max-width:95%;}   
+}
+
+
+h3 {
+    font-size: 1rem;
+    padding: 2rem 0 1rem 0;
+    color: rgb(0,123,255);
+}
+
+h4 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+p.lead {
+    font-size: 1.1rem;
+}
+
+#top {
+    background: transparent url('img/fondo.jpg') 0 0 no-repeat;
+    background-size: 50% auto;
+}
+
+@media screen and (max-width: 992px){
+ #top {
+    background: transparent url('img/fondo.jpg') 0 0 no-repeat;
+    background-size: 75% auto;
+}   
+}
+
+
+.cuadrado{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+.arriba {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.abajo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.abajo a{
+    color:white;
+}
+
+@media screen and (max-width:992px){
+
+    #about .arriba{position:relative;} 
+    #about .abajo{position:relative; padding-top:3rem;}
+}
+
+.abajo p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 0.5rem;
+}
+
+@keyframes rojos {
+    from {
+        fill: rgb(0, 127, 246)
+    }
+    to {
+        fill: rgb(255, 62, 181)
+    }
+}
+
+@keyframes azules {
+    from {
+        fill: rgb(255, 62, 181)
+    }
+    to {
+        fill: rgb(0, 127, 246)
+    }
+}
+
+.rojo {
+    animation-name: rojos;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.azul {
+    animation-name: azules;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+/* Side Menu */
+
+#sidebar-wrapper {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    -webkit-transform: translateX(250px);
+    transform: translateX(250px);
+    background: linear-gradient(rgb(0, 127, 246), rgb(255, 62, 181));
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li.sidebar-nav-item a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav>.sidebar-brand {
+    font-size: 1.2rem;
+    background: rgba(52, 58, 64, 0.1);
+    height: 80px;
+    line-height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+.sidebar-nav>.sidebar-brand a {
+    color: #fff;
+}
+
+.sidebar-nav>.sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.menu-toggle {
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: white;
+    line-height: 50px;
+    z-index: 999;
+    border-radius: 0;
+    background: rgb(64,70,193);
+}
+
+.menu-toggle:focus,
+.menu-toggle:hover {
+    color: #fff;
+}
+
+.menu-toggle:hover {
+    background: rgb(255, 62, 181);
+}
+
+
+
+#about, #support{
+    background:rgba(255,255,255,.9);
+}
+
+#social{
+    background:rgba(255,255,255,.45);    
+}
+
+#info{
+     background:url(img/libro.jpg); 
+     background-size:cover;
+}
+
+
+#valpo {
+    background: url('img/ciudad-lorenipsum.jpg');
+    background-size: cover;
+}
+
+#talca {
+    background: url('img/ciudad-talca.jpg');
+    background-size: cover;
+}
+
+#stgo {
+    background: url('img/ciudad-lorenipsum.jpg');
+    background-size: cover;
+}
+
+#concellan {
+    background: url('img/ciudad-talca.jpg');
+    background-size: cover;
+}
+
+#temuco {
+    background: url('img/ciudad-lorenipsum.jpg');
+    background-size: cover;
+}
+
+#serena {
+    background: url('img/ciudad-lorenipsum.jpg');
+    background-size: cover;
+}
+
+#brand{
+    background:url('img/brand.png');
+    background-size:cover;
+}
