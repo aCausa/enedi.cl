@@ -72,13 +72,13 @@ p.lead {
 }
 
 #top {
-    background: transparent url('img/fondo.jpg') 0 0 no-repeat;
+    background: transparent url('img/fondo-1.jpg') 0 0 no-repeat;
     background-size: 50% auto;
 }
 
 @media screen and (max-width: 992px){
  #top {
-    background: transparent url('img/fondo.jpg') 0 0 no-repeat;
+    background: transparent url('img/fondo-1.jpg') 0 0 no-repeat;
     background-size: 75% auto;
 }   
 }
@@ -166,7 +166,7 @@ p.lead {
     transition: all 0.4s ease 0s;
     -webkit-transform: translateX(250px);
     transform: translateX(250px);
-    background: linear-gradient(rgb(0, 127, 246), rgb(255, 62, 181));
+    background:rgb(255,72,176);
 }
 
 .sidebar-nav {
@@ -188,7 +188,7 @@ p.lead {
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #fff;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgb(191,85,196);
 }
 
 .sidebar-nav li a:active,
@@ -198,12 +198,14 @@ p.lead {
 
 .sidebar-nav>.sidebar-brand {
     font-size: 1.2rem;
-    background: rgba(52, 58, 64, 0.1);
     height: 80px;
     line-height: 50px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 15px;
+    font-family: 'KappaDisplay', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;    
 }
 
 .sidebar-nav>.sidebar-brand a {
@@ -233,18 +235,14 @@ p.lead {
     line-height: 50px;
     z-index: 999;
     border-radius: 0;
-    background: rgb(64,70,193);
-}
-
-.menu-toggle:focus,
-.menu-toggle:hover {
-    color: #fff;
+    background: rgb(255,72,176);
 }
 
 .menu-toggle:hover {
-    background: rgb(255, 62, 181);
+    color: rgb(0,123,255);
+    background:transparent;
+    transition: all ease .5s;
 }
-
 
 
 #about, #support{
@@ -262,7 +260,7 @@ p.lead {
 
 
 #valpo {
-    background: url('img/ciudad-lorenipsum.jpg');
+    background: url('img/ciudad-valpo.jpg');
     background-size: cover;
 }
 
@@ -272,26 +270,26 @@ p.lead {
 }
 
 #stgo {
-    background: url('img/ciudad-lorenipsum.jpg');
+    background: url('img/ciudad-stgo.jpg');
     background-size: cover;
 }
 
 #concellan {
-    background: url('img/ciudad-talca.jpg');
+    background: url('img/ciudad-concellan.jpg');
     background-size: cover;
 }
 
 #temuco {
-    background: url('img/ciudad-lorenipsum.jpg');
+    background: url('img/ciudad-temuco.jpg');
     background-size: cover;
 }
 
 #serena {
-    background: url('img/ciudad-lorenipsum.jpg');
+    background: url('img/ciudad-serena.jpg');
     background-size: cover;
 }
 
 #brand{
-    background:url('img/brand.png');
+    background:url('img/brand-1.jpg');
     background-size:cover;
 }
