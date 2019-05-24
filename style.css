@@ -12,6 +12,12 @@
   src: local('KappaText Book'), local('KappaText-Book'), url(fonts/KappaText-Book.woff2) format('woff2');
 }
 
+@font-face {
+  font-family: 'KappaText Bold';
+  font-style: normal;
+  font-weight: 800;
+  src: local('KappaText Bold'), local('KappaText-Bold'), url(fonts/KappaText-Bold.woff2) format('woff2');
+}
 
 
 body {
@@ -106,6 +112,14 @@ p.lead {
 
 .abajo a{
     color:white;
+    font-family: 'KappaText Bold', sans-serif;
+    font-weight: 800;    
+}
+
+.abajo a:hover{
+    color:rgb(255,72,176);
+    transition: all ease .5s;
+    text-decoration: none;
 }
 
 @media screen and (max-width:992px){
